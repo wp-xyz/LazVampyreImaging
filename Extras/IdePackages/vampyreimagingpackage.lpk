@@ -1,15 +1,16 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <CONFIG>
-  <Package Version="3">
+  <Package Version="4">
     <Name Value="VampyreImagingPackage"/>
-    <Author Value="http://imaginglib.sourceforge.net"/>
+    <Type Value="RunAndDesignTime"/>
+    <AddToProjectUsesSection Value="True"/>
+    <Author Value="Marek Mauder (http://imaginglib.sourceforge.net)"/>
     <CompilerOptions>
-      <Version Value="9"/>
+      <Version Value="11"/>
       <SearchPaths>
         <IncludeFiles Value="../../Source;../../Source/JpegLib;../../Source/ZLib"/>
-        <Libraries Value="../Extensions/J2KObjects"/>
-        <OtherUnitFiles Value="../../Source;../../Source/JpegLib;../../Source/ZLib;../Extensions"/>
-        <UnitOutputDirectory Value="../../Bin/Dcu/$(TargetCPU)-$(Target_OS)"/>
+        <OtherUnitFiles Value="../../Source;../../Source/JpegLib;../../Source/ZLib"/>
+        <UnitOutputDirectory Value="../../bin/ppu/$(TargetCPU)-$(TargetOS)"/>
       </SearchPaths>
       <Parsing>
         <Style Value="1"/>
@@ -20,21 +21,22 @@
       </Parsing>
       <CodeGeneration>
         <Optimizations>
-          <VariablesInRegisters Value="True"/>
           <OptimizationLevel Value="2"/>
+          <VariablesInRegisters Value="True"/>
         </Optimizations>
       </CodeGeneration>
       <Other>
         <CustomOptions Value="-dFULL_FEATURE_SET"/>
-        <CompilerPath Value="$(CompPath)"/>
       </Other>
     </CompilerOptions>
     <Description Value="Vampyre Imaging Library Package for Lazarus
 "/>
-    <License Value="MPL/LGLP
+    <License Value="Imaging comes with two open source licenses from which you can choose the one which fits your needs best:
+* MPL - Mozilla Public License
+* LGPL - GNU Lesser General Public License
 "/>
     <Version Minor="78"/>
-    <Files Count="19">
+    <Files Count="18">
       <Item1>
         <Filename Value="../../Source/Imaging.pas"/>
         <UnitName Value="Imaging"/>
@@ -96,23 +98,18 @@
         <UnitName Value="ImagingPortableMaps"/>
       </Item15>
       <Item16>
-        <Filename Value="../Extensions/ImagingExtras.pas"/>
-        <UnitName Value="ImagingExtras"/>
-      </Item16>
-      <Item17>
         <Filename Value="../../Source/ImagingGif.pas"/>
         <UnitName Value="ImagingGif"/>
-      </Item17>
-      <Item18>
+      </Item16>
+      <Item17>
         <Filename Value="../../Source/ImagingColors.pas"/>
         <UnitName Value="ImagingColors"/>
-      </Item18>
-      <Item19>
+      </Item17>
+      <Item18>
         <Filename Value="../../Source/ImagingRadiance.pas"/>
         <UnitName Value="ImagingRadiance"/>
-      </Item19>
+      </Item18>
     </Files>
-    <Type Value="RunAndDesignTime"/>
     <RequiredPkgs Count="1">
       <Item1>
         <PackageName Value="LCL"/>
@@ -120,8 +117,6 @@
       </Item1>
     </RequiredPkgs>
     <UsageOptions>
-      <LibraryPath Value="../Extensions/J2KObjects"/>
-      <ObjectPath Value="../Extensions"/>
       <UnitPath Value="$(PkgOutDir)"/>
     </UsageOptions>
     <PublishOptions>
