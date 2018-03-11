@@ -3,7 +3,6 @@
   <Package Version="4">
     <Name Value="VampyreImagingPackage"/>
     <Type Value="RunAndDesignTime"/>
-    <AddToProjectUsesSection Value="True"/>
     <Author Value="Marek Mauder (http://imaginglib.sourceforge.net)"/>
     <CompilerOptions>
       <Version Value="11"/>
